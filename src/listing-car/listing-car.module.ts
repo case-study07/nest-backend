@@ -9,7 +9,6 @@ import { InspectionModule } from 'src/inspection/inspection.module';
 import { PaperClassModule } from 'src/paper-class/paper-class.module';
 import { SalesPointModule } from 'src/sales-point/sales-point.module';
 import { SuggestedListingModule } from 'src/suggested-listing/suggested-listing.module';
-import { TestingRecordModule } from 'src/testing-record/testing-record.module';
 import { ListingCarController } from './listing-car.controller';
 import { ListingCarRepository } from './listing-car.repository';
 import { ListingCarService } from './listing-car.service';
@@ -22,7 +21,6 @@ import { ListingCarService } from './listing-car.service';
     AdditionModule,
     CarBodyEvaluationModule,
     InspectionModule,
-    TestingRecordModule,
     SuggestedListingModule,
     PaperClassModule,
     ExhibitorEntryModule,

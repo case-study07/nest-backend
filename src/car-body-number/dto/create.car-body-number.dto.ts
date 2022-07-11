@@ -29,7 +29,6 @@ import { CreateInspectionDTO } from 'src/inspection/dto/create-inspection.dto';
 import { CreatePaperClassDTO } from 'src/paper-class/dto/create.paperclass.dto';
 import { CreateSalesPointDTO } from 'src/sales-point/dto/create-salespoint.dto';
 import { CreateSuggestedListingDTO } from 'src/suggested-listing/dto/create.suggested-listing.dto';
-import { CreateTestingRecordDTO } from 'src/testing-record/dto/create-testingrecord.dto';
 
 export class CreateCarBodyNumberDTO {
   @ApiProperty({
@@ -222,14 +221,6 @@ export class CreateCarBodyNumberDTO {
   @Type(() => CreateInspectionDTO)
   @ValidateNested()
   Inspection?: Inspection;
-
-  @ApiProperty({
-    type: CreateTestingRecordDTO,
-    description: '検査記録',
-  })
-  @Type(() => CreateTestingRecordDTO)
-  @ValidateNested()
-  TestingRecord?: TestingRecord;
 
   @ApiProperty({
     type: CreatePaperClassDTO,
